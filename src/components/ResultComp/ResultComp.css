@@ -1,0 +1,85 @@
+.outer-results-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 20px;
+}
+
+.inner-results-container {
+  background: var(--colors-slate-800, #1e293b);
+  gap: 10px;
+  border: 2px #9d69ff solid;
+  min-height: fit-content;
+  width: 70%;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.inner-results-container.expanded {
+  width: 90%; /* Increase width when expanded */
+}
+
+.inner-results-container h4 {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.5px;
+  font-family: "Segoe UI", sans-serif;
+  transition: font-size 0.3s ease-in-out; /* Smooth font size transition */
+}
+
+.inner-results-container h4.expanded-text {
+  font-size: 24px; /* Increase font size by 10px when expanded */
+}
+
+.done-button-container {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.done-button-container button {
+  background: linear-gradient(114.27deg, #9d69ff 23.89%, #3e6eff 104.11%);
+  height: 50px;
+  width: 120px;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.expand-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+}
+
+.expand-container h5 {
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-family: "Segoe UI", sans-serif;
+}

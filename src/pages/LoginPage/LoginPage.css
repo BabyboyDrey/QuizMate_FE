@@ -1,0 +1,56 @@
+.form-container {
+  width: 100%;
+  margin: 50px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+form input {
+  width: 300px;
+  height: auto;
+
+  background-color: var(--colors-slate-800, #1e293b);
+  border-width: 0;
+  border-style: none;
+  border-color: initial;
+  border-image: none;
+  outline: none;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #94a3b8;
+  caret-color: #94a3b8;
+}
+
+form input::placeholder {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+form button {
+  background: linear-gradient(114.27deg, #9d69ff 23.89%, #3e6eff 104.11%);
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.text-container h3 {
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
